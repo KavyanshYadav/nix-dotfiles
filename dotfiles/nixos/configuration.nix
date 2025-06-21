@@ -148,6 +148,9 @@ programs.zsh.enable = true;
 ];
   };
 
+
+
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   nixpkgs.config.allowUnfree = true;
@@ -163,6 +166,15 @@ wlroots
 wayland-utils
 wl-clipboard
 foot
+gcc
+    gnumake
+    cmake
+    pkg-config
+    python3
+    nodejs
+    rustup
+    go
+    docker
  pipewire
     pavucontrol        # PulseAudio volume control GUI (works with PipeWire Pulse)
     wireplumber        # Recommended PipeWire session manager
