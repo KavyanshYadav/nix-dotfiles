@@ -1,0 +1,11 @@
+# Get connected monitors
+monitors=($(xrandr --query | grep " connected" | cut -d' ' -f1))
+
+# Assign variables dynamically
+export MONITOR1="${monitors[0]}"
+export MONITOR2="${monitors[1]}"
+
+# Optional: log to check
+echo "Detected monitors:"
+echo "MONITOR1=$MONITOR1"
+echo "MONITOR2=$MONITOR2"

@@ -24,10 +24,18 @@ fileSystems."/" = {
   ];
 
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
+  boot.loader.systemd-boot.enable = false;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.grub.enable = false;
-  boot.loader.grub.device = "/dev/nvme0n1";
+  boot.loader.grub = {
+    enable = true;
+    version = 2;
+    efiSupport = true;
+
+    device = "nodev";
+
+    theme ="/home/aufvim/Elegant-grub2-themes/Elegant-forest-window-left-dark";
+    };
+
   boot.loader.grub.useOSProber = true;
 
   networking.hostName = "nixos"; # Define your hostname.
@@ -185,6 +193,7 @@ polybar
 curl
 i3
 btop
+xclip
 avahi
 htop
 feh 
