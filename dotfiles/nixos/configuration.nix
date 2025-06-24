@@ -194,6 +194,7 @@ curl
 i3
 btop
 xclip
+killall
 avahi
 htop
 feh 
