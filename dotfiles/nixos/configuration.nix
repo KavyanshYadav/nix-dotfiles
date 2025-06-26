@@ -196,6 +196,8 @@ btop
 xclip
 killall
 gettext
+python313Packages.pip
+superfile
 avahi
 htop
 feh 
