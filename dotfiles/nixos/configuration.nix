@@ -195,6 +195,7 @@ i3
 btop
 xclip
 killall
+gettext
 avahi
 htop
 feh 

@@ -1,11 +1,16 @@
+#!/usr/bin/env bash
+
 # Get connected monitors
 monitors=($(xrandr --query | grep " connected" | cut -d' ' -f1))
 
 # Assign variables dynamically
 export MONITOR1="${monitors[0]}"
-export MONITOR2="${monitors[1]}"
+export MONITOR2="${monitors[1]:-${monitors[0]}}" # fallback to MONITOR1 if only one monitor
 
-# Optional: log to check
-echo "Detected monitors:"
-echo "MONITOR1=$MONITOR1"
-echo "MONITOR2=$MONITOR2"
+# Optional: log to file for debugging
+echo "Detected monitors:" >~/.config/i3/monitor.log
+echo "MONITOR1=$MONITOR1" >>~/.config/i3/monitor.log
+echo "MONITOR2=$MONITOR2" >>~/.config/i3/monitor.log
+
+# Generate the actual i3 config
+envsubst '${MONITOR1} ${MONITOR2}' <~/.config/i3/config.template >~/.config/i3/config
