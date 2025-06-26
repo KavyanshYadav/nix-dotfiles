@@ -193,6 +193,7 @@ polybar
 curl
 i3
 btop
+
 xclip
 killall
 gettext
