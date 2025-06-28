@@ -63,7 +63,6 @@ services.pipewire = {
   services.xserver.videoDrivers = [ "nvidia" ];
    hardware.nvidia = {
     modesetting.enable = true;
-    powerManagement.enable = true;
 
     prime = {
       sync.enable = true;
@@ -97,7 +96,12 @@ hardware.opengl.extraPackages = with pkgs; [
   libvdpau-va-gl
 ];
 hardware.opengl.enable = true;
+  hardware.opengl.driSupport32Bit = true;
 
+
+
+  programs.steam.enable = true;
+  hardware.steam-hardware.enable = true;
 
 
 
@@ -156,8 +160,18 @@ programs.zsh.enable = true;
 ];
   };
 
+  services.logind = {
+  lidSwitch = "ignore";
+  lidSwitchDocked = "ignore";
+  lidSwitchExternalPower = "ignore";
+};
 
 
+virtualisation.docker.enable = true;
+virtualisation.virtualbox.host.enable = true;
+
+users.extraGroups.vboxusers.members = [ "aufvim" ];
+users.extraGroups.docker.members = [ "aufvim" ];
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -180,6 +194,7 @@ wlroots
 wayland-utils
 wl-clipboard
 foot
+powertop
 gcc
     gnumake
     cmake
@@ -200,6 +215,7 @@ curl
 i3
 btop
 yazi
+bottles
 ffmpegthumbnailer
   poppler_utils       # For PDFs
   jq
@@ -216,7 +232,14 @@ htop
 feh 
 wlr-randr
 arandr
+gamemode
+mangohud
+lutris
+    wineWowPackages.stable
+    winetricks
+
 autorandr
+qbittorrent
 pasystray
 python314
 zsh
