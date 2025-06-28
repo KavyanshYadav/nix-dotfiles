@@ -163,6 +163,12 @@ programs.zsh.enable = true;
   # $ nix search wget
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
+    (python3.withPackages (ps: with ps; [
+      numpy
+      pandas
+      cairosvg
+      requests
+    ]))
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
 ly
 git
@@ -193,6 +199,12 @@ polybar
 curl
 i3
 btop
+yazi
+ffmpegthumbnailer
+  poppler_utils       # For PDFs
+  jq
+  bat
+  ueberzugpp
 
 xclip
 killall

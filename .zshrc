@@ -11,7 +11,7 @@ fi
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-
+alias spf="superfile"
 alias dotfiles="$(which git) --git-dir=\$HOME/.dotfiles/ --work-tree=\$HOME"
 
 # Set name of the theme to load --- if set to "random", it will
