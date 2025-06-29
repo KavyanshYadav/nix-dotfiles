@@ -216,6 +216,7 @@ i3
 btop
 yazi
 bottles
+xfce.thunar
 ffmpegthumbnailer
   poppler_utils       # For PDFs
   jq
