@@ -247,6 +247,10 @@ zsh
 i3status
 dmenu
 firefox
+unzip
+rocmPackages.llvm.clang-tools
+mpv
+ani-cli
 kitty  
  wget
  pciutils
