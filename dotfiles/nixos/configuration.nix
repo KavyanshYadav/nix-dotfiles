@@ -245,6 +245,7 @@ pasystray
 python314
 zsh
 i3status
+unrar
 dmenu
 firefox
 unzip

@@ -1,7 +1,7 @@
-skse64 loader 02010010 01DBEBF13C9B77BF 6.2 (9200)
-config path = Z:\home\aufvim\.local\share\bottles\bottles\installer\drive_c\TES - Skyrim - Anniversary Edition\Data\SKSE\skse.ini
-procPath = Z:\home\aufvim\.local\share\bottles\bottles\installer\drive_c\TES - Skyrim - Anniversary Edition\\SkyrimSE.exe
-launching: SkyrimSE.exe (Z:\home\aufvim\.local\share\bottles\bottles\installer\drive_c\TES - Skyrim - Anniversary Edition\\SkyrimSE.exe)
+skse64 loader 02010010 01DBED041E3EAEBE 6.2 (9200)
+config path = C:\TES - Skyrim - Anniversary Edition\Data\SKSE\skse.ini
+procPath = C:\TES - Skyrim - Anniversary Edition\\SkyrimSE.exe
+launching: SkyrimSE.exe (C:\TES - Skyrim - Anniversary Edition\\SkyrimSE.exe)
 dwSignature = FEEF04BD
 dwStrucVersion = 00010000
 dwFileVersionMS = 00010006
@@ -19,7 +19,7 @@ productVersionStr = 1.6.318.0
 version = 00010006013E0000
 product name = TESV: Skyrim
 steam exe
-dll = Z:\home\aufvim\.local\share\bottles\bottles\installer\drive_c\TES - Skyrim - Anniversary Edition\\skse64_1_6_318.dll
+dll = C:\TES - Skyrim - Anniversary Edition\\skse64_1_6_318.dll
 main thread id = 204
 hookBase = 0000000000140000
 loadLibraryAAddr = 00006FFFFFECEAFC

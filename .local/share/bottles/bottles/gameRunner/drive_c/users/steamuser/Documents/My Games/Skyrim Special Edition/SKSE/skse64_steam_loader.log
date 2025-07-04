@@ -1,11 +1,11 @@
-skse64 loader 02010010 (steam) 01DBEBF13D319A5D 6.2 (9200)
+skse64 loader 02010010 (steam) 01DBED041ECE443C 6.2 (9200)
 loader base addr = 00006FFFFD300000
 exe base addr = 0000000140000000
 found iat at 0000000141603D48
 original thunk 00006FFFFF9FBD00
 patched iat
 HookMain: thread = 204 retaddr = 00000001414761FA
-runtimePath = Z:\home\aufvim\.local\share\bottles\bottles\installer\drive_c\TES - Skyrim - Anniversary Edition\SkyrimSE.exe
+runtimePath = C:\TES - Skyrim - Anniversary Edition\SkyrimSE.exe
 dwSignature = FEEF04BD
 dwStrucVersion = 00010000
 dwFileVersionMS = 00010006
@@ -23,4 +23,4 @@ productVersionStr = 1.6.318.0
 version = 00010006013E0000
 product name = TESV: Skyrim
 steam exe
-dll = Z:\home\aufvim\.local\share\bottles\bottles\installer\drive_c\TES - Skyrim - Anniversary Edition\\skse64_1_6_318.dll
+dll = C:\TES - Skyrim - Anniversary Edition\\skse64_1_6_318.dll
