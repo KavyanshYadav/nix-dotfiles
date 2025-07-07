@@ -246,6 +246,11 @@ python314
 zsh
 i3status
 unrar
+ninja
+zlib
+flameshot
+clickhouse
+picom
 dmenu
 firefox
 unzip
